@@ -145,6 +145,7 @@ footer .container {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content:space-between;
+	/*if i just set height,then the stacked containers don't take the background color*/
 	min-height: 100px;
 	width: 100%;
 	background: #2d3c49;
@@ -152,12 +153,6 @@ footer .container {
 	font-family: 'Roboto Slab', serif;
 }
 
-/*.footer-box {
-	border-right: 1px solid #ccc;
-}
-.footer-box:last-of-type {
-	border-right: none;
-}*/
 
 .footer-box {
 	text-align: center;
