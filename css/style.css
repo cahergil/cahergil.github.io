@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+ /* font-family: 'Roboto', sans-serif;*/
+ font-family: 'Roboto Slab', serif;
+
+}
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+/*
+*
+* Header
+*
+*/
+.header_container {
+	display: flex;
+	justify-content: space-between;
+	height: 200px;
+	/*border: 1px solid #000;*/
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	margin: 0.625em;
+	/*https://cdn-images-1.medium.com/max/2000/1*rV6_99F42Jr7uR5YtLrHrQ.jpeg*/
+
+	background-image:url("../images/background_header.jpeg");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+
+.header_container .logo img {
+	height: 100px;
+	margin-top: 1em;
+	margin-right: 1em;
+}
+
+.header_container .title {
+	text-align:center;
+	padding-right: 10px;
+	line-height: 2.5em;
+}
+
+
+/*
+*
+* nav
+*
+*/
+.nav {
+	margin:20px;
+}
+
+.nav .nav_list {
+	list-style: none;
+	padding-left:0px;
+	text-align: center;
+
+
+}
+
+.nav ul li {
+	display: inline;
+	margin:20px;
+	padding:10px;
+	text-transform: uppercase;
+}
+.nav ul li a:link {
+	text-decoration: none;
+	color: black;
+
+}
+.nav ul li a:hover {
+	text-decoration: underline;
+
+}
+
+
+/*
+*
+* image section
+*
+*/
+
+.front-image img {
+	width: 100%;
+	/*background-image: url("http://blog.debugme.eu/wp-content/uploads/2016/01/great-frontend.png");*/
+	height: 350px;
+
+}
+
+
+/*
+*
+* footer
+*
+*/
+footer .container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 100px;
+	width: 100%;
+	background: #2d3c49;
+	color:#02b3e4;
+	font-family: 'Roboto Slab', serif;
+}
+
+.box {
+	border-right: 1px solid #ccc;
+}
+.box:last-of-type {
+	border-right: none;
+}
+
+.container_left{
+	text-align: left;
+  	width: 33.333%;
+  	line-height: 0.5em;
+  	padding-left: 0.5em;
+
+}
+.container_center {
+	text-align: center;
+	width: 33.333%;
+	line-height: 0.5em;
+	margin:0.62em;
+}
+.container_right{
+	text-align:center;
+	width: 33.333%;
+	padding-right: 1.25em;
+
+}
+
+
+.fab {
+	font-size: 2em;
+	margin-right: 10px;
+
+}
+/*.remlink .fab {
+	color:#02b3e4;
+https://stackoverflow.com/questions/34637113/changing-font-awesome-icon-link-color-after-its-visited/34637210
+}*/
+.remlink:link .fab {
+	color:#02b3e4;
+}
+.remlink:visited .fab {
+	color:#ccc;
+
+}
+.remlink:hover .fab {
+	color: #ff8800;
+
+}
+
+
+
