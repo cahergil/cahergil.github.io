@@ -43,7 +43,10 @@
 
 			<section class="front-image">
 				<picture>
-					<img src="http://blog.debugme.eu/wp-content/uploads/2016/01/great-frontend.png" alt="main image">
+					<source media="(min-width:950px)" srcset="images/background_header-1900_extra_large_2x.jpeg 2x,images/background_header-950_extra_large_1x.jpeg 1x">
+					<source media="(min-width:750px)" srcset="images/background_header-1500_large_2x.jpeg 2x,images/background_header-750_large_1x.jpeg 1x">
+					<source media="(min-width:550px)" srcset="images/background_header-550_medium.jpeg">
+					<img src="images/background_header-400_small.jpeg" alt="main image">
 				</picture>
 			</section>
 			<section class="featured-work-header">
