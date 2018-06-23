@@ -25,7 +25,7 @@ div {
 * Header
 *
 */
-.header_container {
+.header-container {
 
 	display: flex;
 	justify-content: space-between;
@@ -36,7 +36,7 @@ div {
 }
 
 
-.header_container .logo img {
+.header-container .logo img {
 
 	height: 100px;
 	margin-top: 1em;
@@ -45,7 +45,7 @@ div {
 }
 
 
-.header_container .title {
+.header-container .title {
 
 	text-align:center;
 	padding-right: 10px;
