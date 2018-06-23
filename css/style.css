@@ -60,7 +60,7 @@ div {
 }
 
 
-
+f
 .header-container .title h3 {
 
 	color: #757575;
@@ -195,6 +195,13 @@ div {
 
 	text-decoration: none;
 	color: #ccc;
+
+}
+
+
+.fw-box-footer a:visited {
+
+	color: red;
 
 }
 
