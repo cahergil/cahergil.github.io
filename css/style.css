@@ -214,10 +214,17 @@ f
 
 .portfolio {
 
-	background: url(../images/screen_shoot_portfolio.png);
+	background: url(../images/portfolio.png);
 	background-repeat: no-repeat;
 }
 
+
+.memory-game {
+
+  background-image:  url(../images/mg.png);
+  background-repeat: no-repeat;
+
+}
 /*
 *
 * footer
@@ -275,6 +282,3 @@ footer .container {
 	color: #ff8800;
 
 }
-
-
-
