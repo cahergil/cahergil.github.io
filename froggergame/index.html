@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800" rel="stylesheet">
+   
+</head>
+<body>
+   
+    <div class="container">
+        <span class="title">Frogger Game</span> 
+        <span class="music">music on</span> 
+    </div>
+    <div class="modal">
+        <p>Select a player(tab or mouse) and press enter</p>
+        <div class="modal-images">
+            <img src="images/char-boy.png" tabindex="0" alt="char boy">
+            <img src="images/char-cat-girl.png" tabindex="0" alt="cat girl">
+            <img src="images/char-horn-girl.png" tabindex="0" alt="horn girl">
+            <img src="images/char-pink-girl.png" tabindex="0" alt="pink girl">
+            <img src="images/char-princess-girl.png" tabindex="0" alt="princess girl">
+        </div>
+        <div class="modal-rectangles">
+            <div class="rectangle rectangle-one"></div>
+            <div class="rectangle rectangle-two"></div>
+            <div class="rectangle rectangle-three"></div>
+            <div class="rectangle rectangle-four"></div>
+            <div class="rectangle rectangle-five"></div>
+        </div>
+    </div>
+    <div class="modal-end-game">
+        <div class="container-end-game">
+            
+            <h1>
+            <img src="images/party_emoji.png" alt=""> 
+            <img src="images/party_emoji.png" alt=""> 
+            GAME OVER!
+            <img src="images/party_emoji.png" alt=""> 
+            <img src="images/party_emoji.png" alt=""> 
+            </h1>
+            
+            <h2>Your  score  was: <span class="final-score"></span></h2>
+            <h2>Refresh  the  page  to  start over</h2>
+            
+        </div>
+    </div>
+    <script src="howler.js/dist/howler.js"></script>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>

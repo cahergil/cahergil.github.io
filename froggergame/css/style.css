@@ -1,0 +1,214 @@
+@font-face {
+
+    font-family: "ARCADECLASSIC";
+    src: url(../fonts/ARCADECLASSIC.TTF);
+
+}
+
+
+body {
+
+    text-align: center;
+    font-family: "ARCADECLASSIC"; 
+    
+}
+
+/*
+* Styles title and music on/off
+*/
+
+.container {
+
+    width: 505px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.container .title {
+
+    font-size: 50px;
+    padding-left:75px;
+    -webkit-text-stroke-color:green;
+    -webkit-text-stroke-width: 2px;
+    position: relative;
+
+}
+
+
+.container .music {
+
+    float:right;
+    padding-top: 15px;
+    cursor:pointer;
+    min-width: 75px;
+    text-align: right;
+
+}
+
+
+/*
+* Styles for the modal dialog box
+*/
+.modal {
+
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    z-index: 3; /* places the modal on top of everything */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    
+
+}
+
+
+.modal p {
+
+    font-size: 30px;
+    position: absolute;
+    top: 150px;
+    left: 360px;
+
+}
+
+
+.modal .modal-images {
+
+    position: absolute;
+    left: 460px;
+    top: 240px;
+
+}
+
+
+.modal img {
+
+    margin-right: 10px;
+    box-sizing: border-box;
+
+}
+
+
+.modal img:last-of-type {
+
+    margin-right: 0px;
+
+}
+
+
+.modal img:focus {
+
+    outline: 0;
+    animation-name: moveUpDown;
+    animation-duration: 500ms;
+
+}
+@keyframes moveUpDown {
+    50% { transform: translateY(-30px); }
+    100% {transform: translateY(0);}
+}
+
+
+.modal .modal-rectangles .rectangle {
+
+    height: 5px;
+    width: 67px;
+    background-color: gray;
+    border-radius: 3px;
+    box-shadow: 3px 3px 8px #888888;
+    display: none;
+
+}
+
+
+.modal .modal-rectangles .show {
+
+    display: block;
+
+}
+
+
+.modal .modal-rectangles .rectangle-one {
+   
+    position: absolute;
+    left: 460px;
+    top: 335px;
+
+}
+
+
+.modal .modal-rectangles .rectangle-two {
+   
+    position: absolute;
+    left: 544px;
+    top: 335px;
+
+}
+
+
+.modal .modal-rectangles .rectangle-three {
+   
+    position: absolute;
+    left: 633px;
+    top: 335px;
+
+}
+
+
+.modal .modal-rectangles .rectangle-four {
+   
+    position: absolute;
+    left: 720px;
+    top: 335px;
+
+}
+
+
+.modal .modal-rectangles .rectangle-five {
+   
+    position: absolute;
+    left: 815px;
+    top: 335px;
+}
+
+
+.modal-end-game {
+
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    position:fixed;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3; /* places the modal on top of everything */
+    top: 0px;
+    left: 0px;
+    display: none;
+    
+}
+
+/*
+* Styles for end-game modal
+*/
+.modal-end-game .container-end-game {
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+} 
+
+
+.modal-end-game .container-end-game .final-score {
+
+    color:green;
+
+}
+
