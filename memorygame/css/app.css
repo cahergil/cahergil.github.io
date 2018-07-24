@@ -1,0 +1,324 @@
+/* Color variables */
+:root {
+
+  --primaryColor: #B71C1C;
+  --secondaryColor:#EF5350;
+
+}
+
+
+html {
+
+    box-sizing: border-box;
+
+}
+
+
+*,
+*::before,
+*::after {
+
+    box-sizing: inherit;
+
+}
+
+
+html,
+body {
+
+    width: 100%;
+  /*  height: 100%;*/
+    height: 600px;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+
+    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    font-family: 'Coda', cursive;
+
+}
+
+
+h1 {
+
+    font-family: 'Monoton', cursive;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-weight: 300;
+    font-size: 3em;
+    margin: 10px;
+
+}
+
+
+header {
+
+    text-align: center;
+
+}
+
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+
+    width: 100%;
+    min-height: 680px;
+    background: linear-gradient(160deg, var(--primaryColor) 0%, var(--secondaryColor) 100%);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+
+}
+
+
+.deck .card {
+
+    height: 125px;
+/*    width: 125px; */
+    width: 20%;
+    background: #2e3d49;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    transition: transform 1s linear,background 1s linear;
+
+}
+
+
+.deck .card:hover {
+
+    background: grey;
+
+}
+
+
+.deck .card.open {
+
+    transform: perspective(400px) rotateY(-180deg);
+    animation-name: bg-fontsize;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    cursor: default;
+
+}
+
+
+ @keyframes bg-fontsize {
+
+    0% {   background: #2e3d49;
+           font-size: 0px;
+    }
+    50% {  background: #2e3d49;
+           font-size: 0px;
+    }
+    51% {  background: #02b3e4;
+           font-size: 33px;
+    }
+    100% { background: #02b3e4;
+           font-size: 33px;
+     }
+
+}
+
+
+
+.deck .card.show {
+
+/*    font-size: 33px; */
+    /* animation-name: fontgrow ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; */
+}
+
+
+
+@keyframes fontgrow {
+
+    0% {font-size: 0px;}
+    49% {font-size: 0px;}
+    50% {font-size: 33px;}
+    100% {font-size: 33px;}
+
+}
+
+
+
+.deck .card.match {
+
+    animation: scalematch 1s linear forwards;
+    cursor: default;
+    background: #43A047;
+    font-size: 33px;
+
+}
+
+@keyframes scalematch {
+
+    0% {transform: scale(1.0,1.0);}
+    50% {transform: scale(1.1,1.1);}
+    100% {transform: scale(1.0,1.0);}
+
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    /*text-align: left; */
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+
+}
+
+
+.score-panel .score-panel-box {
+
+    width: 33.333%;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+
+}
+
+
+.button-start {
+
+  border:none;
+  padding: 1rem 2rem;
+  margin:0;
+  text-decoration: none;
+  background: var(--primaryColor);
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+               transform 150ms ease;
+
+}
+
+
+.button-start:hover,
+.button-start:focus {
+
+     background: var(--secondaryColor);
+
+}
+
+
+.fa-star:nth-child(3) {
+
+  margin-right: 10px;
+
+}
+
+
+.moves {
+
+  display: inline-block;
+  min-width: 35px;
+
+}
+
+
+div .minutes{
+
+  display: inline-block;
+  width: 30px;
+  text-align: right;
+
+}
+
+
+div .seconds {
+
+  display: inline-block;
+  width: 23px;
+  text-align: left;
+
+}
+
+/*
+ * Styles for modal dialog
+ */
+#myDialog {
+  padding: 10px;
+  text-align: center;
+  width: 50vw;
+  background: grey;
+  border: 2px solid darkgrey;
+
+}
+
+
+.modal-header h2 {
+
+
+  color: black;
+
+}
+
+
+.modal-footer .btn-box{
+
+  display: inline-block;
+  border: none;
+  margin: 10px;
+  padding: 1rem;
+  background: darkgrey;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background 0.250ms ease;
+
+}
+
+
+.modal-footer .btn-box:hover,
+.modal-footer .btn-box:focus {
+
+  background: white;
+
+}
+
+
+.modal-rating {
+
+  display: inline;
+
+}
+
+
+.modal-total-time,
+.modal-moves {
+
+  font-weight: bold;
+
+}

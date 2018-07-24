@@ -1,0 +1,58 @@
+@media screen and (max-width:470px) {
+
+  .deck .card {
+    height: 90px;
+
+  }
+}
+
+
+@media screen and (max-width:550px) {
+
+    .card {
+
+      margin: 5px;
+    }
+
+    .score-panel .score-panel-box  {
+
+      width: 100%;
+
+    }
+    #myDialog {
+
+      width: 80%;
+
+    }
+
+
+}
+
+
+@media screen and (min-width:551px) {
+
+  .card {
+
+    margin: 5px;
+  }
+
+
+}
+
+
+
+
+@media screen and (min-width:750px) {
+
+
+
+}
+
+@media screen and (min-width: 850px) {
+  .container {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
