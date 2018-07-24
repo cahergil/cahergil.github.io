@@ -418,13 +418,13 @@ class HowlerSounds {
             src: ['froggergame/sounds/punch.mp3']
         });  
         this.endGame = new Howl({
-            src: ['froggergame/sounds/achievement.mp3']
+            src: ['https://cahergil.github.io/froggergame/sounds/achievement.mp3']
         });  
         this.select = new Howl({
             src: ['froggergame/sounds/select.mp3'],
         });  
         this.backgroundMusic = new Howl({
-            src: ['./froggergame/sounds/LukHash_pixel_my_heart_trimmed.mp3'],
+            src: ['https://cahergil.github.io/froggergame/sounds/LukHash_pixel_my_heart_trimmed.mp3'],
             loop: true,
             volume: 0.2
         });
