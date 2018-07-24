@@ -221,9 +221,9 @@ f
 
 .memory-game {
 
-  background-image:  url(../images/mg.png);
-  background-repeat: no-repeat;
-
+	background-image:  url(../images/mg.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
 }
 /*
 *
