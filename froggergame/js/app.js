@@ -409,22 +409,22 @@ class HowlerSounds {
 
     constructor() {
         this.gems = new Howl({
-            src: ['../sounds/gem.mp3']
+            src: ['froggergame/sounds/gem.mp3']
           });
         this.reachedWater = new Howl({
-            src: ['../sounds/points.mp3']
+            src: ['froggergame/sounds/points.mp3']
         });  
         this.punch = new Howl({
-            src: ['../sounds/punch.mp3']
+            src: ['froggergame/sounds/punch.mp3']
         });  
         this.endGame = new Howl({
-            src: ['../sounds/achievement.mp3']
+            src: ['froggergame/sounds/achievement.mp3']
         });  
         this.select = new Howl({
-            src: ['../sounds/select.mp3'],
+            src: ['froggergame/sounds/select.mp3'],
         });  
         this.backgroundMusic = new Howl({
-            src: ['../sounds/LukHash_pixel_my_heart_trimmed.mp3'],
+            src: ['./froggergame/sounds/LukHash_pixel_my_heart_trimmed.mp3'],
             loop: true,
             volume: 0.2
         });
