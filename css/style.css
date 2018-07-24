@@ -216,14 +216,33 @@ f
 
 	background: url(../images/portfolio.png);
 	background-repeat: no-repeat;
+	opacity: 0.5;
+	transition:all 0.5s ease;
 }
 
+
+.portfolio:hover {
+
+	opacity: 1;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+
+}
 
 .memory-game {
 
 	background-image:  url(../images/mg.png);
 	background-repeat: no-repeat;
 	cursor: pointer;
+	opacity: 0.5;
+	transition:all 0.5s ease;
+}
+
+
+.memory-game:hover {
+
+	opacity: 1;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
 }
 /*
 *
