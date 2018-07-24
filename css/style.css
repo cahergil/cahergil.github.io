@@ -244,6 +244,26 @@ f
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 
 }
+
+
+.arcade-game {
+
+	background-image:  url(../images/arcade-game.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+	opacity: 0.5;
+	transition:all 0.5s ease;
+
+}
+
+
+.arcade-game:hover {
+
+	opacity: 1;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+
+}
 /*
 *
 * footer
