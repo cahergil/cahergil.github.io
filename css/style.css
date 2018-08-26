@@ -224,7 +224,7 @@ f
 .portfolio:hover {
 
 	opacity: 1;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 
 }
 
@@ -261,6 +261,26 @@ f
 
 	opacity: 1;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+
+}
+
+
+.feed-reader {
+
+	background-image:  url(../images/feed_reader.png);
+	background-repeat: no-repeat;
+    background-size: cover;
+	cursor: pointer;
+	opacity: 0.5;
+	transition:all 0.5s ease;
+}
+
+
+.feed-reader:hover {
+
+    opacity: 1;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 
 
 }

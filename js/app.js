@@ -4,6 +4,8 @@ elementMemoryGame.onclick = handleMemoryGame;
 const elementFrogger = document.querySelector('.arcade-game');
 elementFrogger.onclick = handleArcadeGame;
 
+const feedReeder = document.querySelector('.feed-reader')
+feedReeder.onClick = handleFeedReader;
 
 function handleMemoryGame(){
     window.open('https://cahergil.github.io/memorygame/');
@@ -11,4 +13,9 @@ function handleMemoryGame(){
 
 function handleArcadeGame() {
     window.open('https://cahergil.github.io/froggergame/');
+}
+
+function handleFeedReader() {
+
+    window.open('https://cahergil.github.io/feedreader/')
 }
