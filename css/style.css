@@ -216,6 +216,7 @@ f
 
 	background: url(../images/portfolio.png);
 	background-repeat: no-repeat;
+    background-size: cover;
 	opacity: 0.5;
 	transition:all 0.5s ease;
 }
@@ -232,6 +233,7 @@ f
 
 	background-image:  url(../images/mg.png);
 	background-repeat: no-repeat;
+    background-size: cover;
 	cursor: pointer;
 	opacity: 0.5;
 	transition:all 0.5s ease;
@@ -250,6 +252,7 @@ f
 
 	background-image:  url(../images/arcade-game.png);
 	background-repeat: no-repeat;
+    background-size: cover;
 	cursor: pointer;
 	opacity: 0.5;
 	transition:all 0.5s ease;
