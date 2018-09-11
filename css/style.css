@@ -292,7 +292,7 @@ f
 .book-app-tracking {
     background-image:  url(../images/myreads.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     cursor: pointer;
     opacity: 0.5;
     transition:all 0.5s ease;
@@ -302,6 +302,28 @@ f
 
 
 .book-app-tracking:hover {
+
+    opacity: 1;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+
+}
+
+
+.neighborhood-map {
+
+    background-image:  url(../images/neighborhood_small.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    opacity: 0.5;
+    transition:all 0.5s ease;
+
+
+}
+
+
+.neighborhood-map:hover {
 
     opacity: 1;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
