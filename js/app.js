@@ -11,6 +11,8 @@ feedReader.onclick = handleFeedReader;
 const myReads = document.querySelector('.book-app-tracking');
 myReads.onclick = handleMyReads;
 
+const neighborhood = document.querySelector('.neighborhood-map ')
+neighborhood.onclick = handleNeighborhood;
 
 function handleMemoryGame(){
     window.open('https://cahergil.github.io/memorygame/');
@@ -26,4 +28,9 @@ function handleFeedReader() {
 
 function handleMyReads() {
     window.open('https://cahergil.github.io/myreads-book-tracking/');
+}
+
+function handleNeighborhood() {
+    window.open('https://cahergil.github.io/neighborhood-map');
+
 }
