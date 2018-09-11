@@ -7,6 +7,8 @@ elementFrogger.onclick = handleArcadeGame;
 const feedReader = document.querySelector('.feed-reader');
 feedReader.onclick = handleFeedReader;
 
+const restaurants = documents.querySelector('.restaurant-reviews');
+restaurants.onclick = handleRestaurants;
 
 const myReads = document.querySelector('.book-app-tracking');
 myReads.onclick = handleMyReads;
@@ -24,6 +26,10 @@ function handleArcadeGame() {
 
 function handleFeedReader() {
     window.open('https://cahergil.github.io/feedreader/index.html');
+}
+
+function handleRestaurants() {
+    window.open('https://cahergil.github.io/rreviews/index.html');
 }
 
 function handleMyReads() {

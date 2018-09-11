@@ -289,6 +289,26 @@ f
 }
 
 
+.restaurant-reviews {
+    background-image:  url(../images/restaurants_review.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    opacity: 0.5;
+    transition:all 0.5s ease;
+
+
+}
+
+.restaurant-reviews:hover {
+
+    opacity: 1;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+
+}
+
+
 .book-app-tracking {
     background-image:  url(../images/myreads.png);
     background-repeat: no-repeat;
