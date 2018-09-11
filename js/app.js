@@ -7,7 +7,7 @@ elementFrogger.onclick = handleArcadeGame;
 const feedReader = document.querySelector('.feed-reader');
 feedReader.onclick = handleFeedReader;
 
-const restaurants = documents.querySelector('.restaurant-reviews');
+const restaurants = document.querySelector('.restaurant-reviews');
 restaurants.onclick = handleRestaurants;
 
 const myReads = document.querySelector('.book-app-tracking');
