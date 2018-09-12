@@ -19,7 +19,7 @@ window.addEventListener('load',(event) => {
     console.log('inside load event');
     if('serviceWorker' in navigator) {
 
-        navigator.serviceWorker.register('sw.js',{scope: '/'})
+        navigator.serviceWorker.register('sw.js',{scope: '/rreviews'})
         .then(
             (reg) => console.log('Service Worker registration successful,scope is',reg.scope)
         )
