@@ -152,7 +152,7 @@ class DBHelper {
   static imageUrlForRestaurant(restaurant) {
     let imageNumber = restaurant.photograph.charAt(0);
     // return (`/img/${restaurant.photograph}`);
-     return (`/img/${imageNumber}`);
+     return (`/rreviews/img/${imageNumber}`);
   }
 
   /**
